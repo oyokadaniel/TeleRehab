@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telerehab/screens/home_screen.dart';
+import 'package:telerehab/screens/nav_screen.dart';
 import 'package:telerehab/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => HomeScreen()));
+              context, MaterialPageRoute(builder: (context) => MyHomePage()));
         },
         child: Text(
           "Login",

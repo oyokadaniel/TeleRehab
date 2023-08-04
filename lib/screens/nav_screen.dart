@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:telerehab/screens/profile_screen.dart';
+import 'package:telerehab/screens/program_screen.dart';
+import 'package:telerehab/screens/settings_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -9,10 +12,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
-    Text('Programs Page'),
+    ProgramPage(),
     Text('My Hub Page'),
-    Text('Profile Page'),
-    Text('Settings Page'),
+    ProfilePage(),
+    SettingsPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -25,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation Bar Example'),
+        title: Text('TeleRehab app'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),

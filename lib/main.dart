@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:telerehab/screens/login_screen.dart';
-import 'package:telerehab/screens/registration_screen.dart';
 
 void main() {
   runApp(MyApp());
