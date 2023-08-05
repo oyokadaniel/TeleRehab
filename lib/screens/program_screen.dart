@@ -14,7 +14,7 @@ class ProgramPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rehabilitation Project'),
+        title: Text('Choose your Program'),
       ),
       body: ListView.builder(
         itemCount: modules.length,
