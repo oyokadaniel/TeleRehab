@@ -15,8 +15,13 @@ class ModuleDetailsPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            Text("start your therapy"),
-            Icon(Icons.not_started_rounded),
+            Text("START THERAPY"),
+            Icon(
+              Icons.not_started_rounded,
+              size: 70,
+              color: Colors.green,
+              weight: 65,
+            ),
           ],
         ),
       ),
