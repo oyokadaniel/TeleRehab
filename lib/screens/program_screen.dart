@@ -73,6 +73,35 @@ class ProgramPage extends StatelessWidget {
                 },
               ),
             ),
+            SizedBox(height: 20.0),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(12.0),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    "About the Programs",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Our programs offers a comprehensive approach to improving your physical and occupational health. With a variety of modules to choose from, you can tailor your experience to your specific needs and goals.",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
